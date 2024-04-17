@@ -1,0 +1,35 @@
+<%- include("partials/header") -%>
+    
+
+<h1 id="irrigation">Irrigation Schedule Recommendations</h1>
+
+<form id="userInputForm">
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required><br>
+    
+    <label for="soilType">Soil Type:</label>
+    <select id="soilType" name="soilType" required>
+        <option value="">Select Soil Type</option>
+        <option value="sandy">Sandy</option>
+        <option value="loamy">Loamy</option>
+        <option value="clay">Clay</option>
+    </select><br>
+    
+    <label for="cropType">Crop Type:</label>
+    <select id="cropType" name="cropType" required>
+        <option value="">Select Crop Type</option>
+        <option value="tomatoes">Tomatoes</option>
+        <option value="corn">Corn</option>
+        <option value="wheat">Wheat</option>
+    </select><br>
+    
+    <button type="submit">Get Recommendations</button>
+</form>
+
+
+<!-- <div>
+    <%= text %>
+</div>  -->
+
+
+<%- include("partials/footer") -%>

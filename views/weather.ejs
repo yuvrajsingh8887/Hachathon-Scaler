@@ -1,0 +1,40 @@
+<%- include("partials/header") -%>
+
+
+<h1 id="irrigation">Weather Forecast</h1>
+<link rel="stylesheet" href="styles.css">
+    
+<form id="weather-forecasting" method="post" action="/weather">
+    <label for="precipitation">Precipitation</label>
+    <select id="precipitation" name="precipitation" required>
+    <option value="">Select precipitation</option>
+    <option value="rain">Rain</option>
+    <option value="drizzle">Drizzle</option>
+    <option value="snow">Snow</option>
+    <option value="hail">Hail</option>
+    <option value="freezing-rain">Freezing Rain</option>
+    </select><br>
+    
+    <label for="temperature">Temperature (°C):</label>
+    <input type="number" id="temperature" name="temperature" required><br>
+    
+    <label for="wind-speed">Wind Speed</label>
+    <select name="wind-speed" id="wind-speed" required>
+        <option value="">Select Wind Speed</option>
+        <option value="light-breeze">Light Breeze</option>
+        <option value="moderate-wind">Moderate wind</option>
+        <option value="Strong-wind">Strong Wind</option>
+    </select><br>
+        
+    <button type="submit">Get Weather  Recommendations</button>
+</form>
+
+<h2>Recommendations</h2>
+<!-- <div class="hello">
+    <%= text %>
+</div> -->
+
+
+
+    <%- include("partials/footer") -%>
+

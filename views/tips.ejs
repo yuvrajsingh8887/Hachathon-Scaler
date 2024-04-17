@@ -1,0 +1,33 @@
+<%- include("partials/header") -%>
+
+<h1 id="irrigation">Resource Management Tips</h1>
+<link rel="stylesheet" href="styles.css">
+    
+<form id="Resource-management-tips" method="post" action="/tips">
+    <label for="water">Types of Water</label>
+    <select id="water" name="water" required>
+    <option value="">Select Water Type</option>
+    <option value="fresh">Fresh water</option>
+    <option value="Salt">Salt water</option>
+    <option value="Ground">Ground water </option>
+    <option value="rain">Rain Water</option>
+    <option value="Waste">Waste Water</option>
+    </select><br>
+    
+    <label for="fertilizer">Fertilizers</label>
+    <select id="fertilizer" name="fertilizer" required>
+    <option value="">Select fertilizer Type</option>
+    <option value="organic">Organic fertilizer</option>
+    <option value="inorganic">Inorganic fertilizer</option>
+    <option value="synthetic">synthetic fertilizer </option>
+    <option value="natural">natural fertilizer</option>
+    </select><br>
+    
+    <label for="pesticides">Pesticides</label>
+    <input type="text" name="pesticides" id="pesticides">
+    </select><br>
+        
+    <button type="submit">Get Weather  Recommendations</button>
+</form>
+
+<%- include("partials/footer") -%>
